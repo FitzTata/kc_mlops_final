@@ -88,7 +88,7 @@ def trigger_pipeline(data: Annotated[Trigger, Body()]):
         GITLAB_TRIGGER_TOKEN,
         {
             "DATA_URL": data.data_url,
-            "HOT_RELOAD_URL": "https://kc-mlops-project.onrender.com/reload-model",
+            "HOT_RELOAD_URL": "https://mlops-course-project-latest.onrender.com/reload-model",
         },
     )
     # do not wait for pipeline to finish and return
