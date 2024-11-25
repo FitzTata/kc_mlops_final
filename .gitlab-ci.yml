@@ -81,7 +81,7 @@ deploy:
 train:
   variables:
     DATA_URL: ""
-    HOT_RELOAD_URL: "https://kc-mlops-project.onrender.com/reload-model"
+    HOT_RELOAD_URL: "https://mlops-course-project-latest.onrender.com/reload-model"
   rules:
     - if: $CI_PIPELINE_TRIGGERED == "true"  # only runs when triggered via API from trigger endpoint
       when: always
