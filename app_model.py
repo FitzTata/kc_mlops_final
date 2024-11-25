@@ -54,6 +54,7 @@ def predict(
 ) -> PredictResponse:
     """Prediction endpoint"""
     prediction = model.predict(data.passwords)
+    print(f'prediction sample on {data.passwords[0]} is {prediction[0]}')
     return PredictResponse(Times=prediction)
 
 
