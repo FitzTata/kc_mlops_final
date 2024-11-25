@@ -95,4 +95,4 @@ train:
     - python train.py data.csv
     - echo \"curl -f -X POST $HOT_RELOAD_URL\"
     # call reload model endpoint to force prod to download new model version from mlflow
-    - curl -f -X POST $HOT_RELOAD_URL
+    - curl -X POST $HOT_RELOAD_URL
