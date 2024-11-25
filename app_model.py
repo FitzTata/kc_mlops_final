@@ -84,7 +84,7 @@ def trigger_pipeline(data: Annotated[Trigger, Body()]):
 
     # trigger pipeline on main branch via API
     project.trigger_pipeline(
-        "main",
+        "master",
         GITLAB_TRIGGER_TOKEN,
         {
             "DATA_URL": data.data_url,
